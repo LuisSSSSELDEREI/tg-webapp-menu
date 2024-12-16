@@ -65,8 +65,9 @@
         }
         .roblox-character {
             max-width: 80%;
-            max-height: 80%;
+            max-height: 70%;
             border-radius: 5px;
+            object-fit: cover;
         }
         .robux {
             font-size: 24px;
@@ -79,13 +80,19 @@
             height: 40px;
             margin-bottom: 5px;
         }
+        .status-text {
+            font-size: 16px;
+            color: #ffffff;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="grid">
         <div class="gift-box" onclick="openGift(this, 1)">
             <div class="gift-content">
-                <img src="https://tr.rbxcdn.com/38c6edcb50866a47af0b9c7208784f95/420/420/AvatarHeadshot/Png" class="roblox-character">
+                <img src="photo_2024-12-16_20-27-43.jpg" class="roblox-character">
+                <div class="status-text">Получено</div>
             </div>
         </div>
         <div class="gift-box" onclick="openGift(this, 2)">
