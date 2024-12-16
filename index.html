@@ -101,13 +101,48 @@
                 <div class="robux">+1000</div>
             </div>
         </div>
-        <div class="gift-box" onclick="shake(this)"></div>
-        <div class="gift-box" onclick="shake(this)"></div>
-        <div class="gift-box" onclick="shake(this)"></div>
-        <div class="gift-box" onclick="shake(this)"></div>
-        <div class="gift-box" onclick="shake(this)"></div>
-        <div class="gift-box" onclick="shake(this)"></div>
-        <div class="gift-box" onclick="shake(this)"></div>
+        <div class="gift-box" onclick="openGift(this, 3)">
+            <div class="gift-content">
+                <img src="pdrk3.jpg" class="roblox-character">
+                <div class="status-text">Получено</div>
+            </div>
+        </div>
+        <div class="gift-box" onclick="openGift(this, 4)">
+            <div class="gift-content">
+                <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
+                <div class="robux">+2000</div>
+            </div>
+        </div>
+        <div class="gift-box" onclick="openGift(this, 5)">
+            <div class="gift-content">
+                <img src="4.jpg" class="roblox-character">
+                <div class="status-text">Получено</div>
+            </div>
+        </div>
+        <div class="gift-box" onclick="openGift(this, 6)">
+            <div class="gift-content">
+                <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
+                <div class="robux">+3000</div>
+            </div>
+        </div>
+        <div class="gift-box" onclick="openGift(this, 7)">
+            <div class="gift-content">
+                <img src="5.jpg" class="roblox-character">
+                <div class="status-text">Получено</div>
+            </div>
+        </div>
+        <div class="gift-box" onclick="openGift(this, 8)">
+            <div class="gift-content">
+                <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
+                <div class="robux">+4000</div>
+            </div>
+        </div>
+        <div class="gift-box" onclick="openGift(this, 9)">
+            <div class="gift-content">
+                <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
+                <div class="robux">+5000</div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -125,31 +160,6 @@
                     action: 'open'
                 }));
             }
-        }
-
-        function shake(element) {
-            element.style.animation = 'none';
-            element.offsetHeight; // trigger reflow
-            element.style.animation = 'shake 0.5s';
-            
-            // Добавляем временные стили для анимации
-            const keyframes = `
-                @keyframes shake {
-                    0%, 100% { transform: translateX(0); }
-                    25% { transform: translateX(-5px); }
-                    75% { transform: translateX(5px); }
-                }
-            `;
-            
-            const styleSheet = document.createElement("style");
-            styleSheet.textContent = keyframes;
-            document.head.appendChild(styleSheet);
-            
-            // Удаляем стили после завершения анимации
-            setTimeout(() => {
-                element.style.animation = '';
-                document.head.removeChild(styleSheet);
-            }, 500);
         }
     </script>
 </body>
