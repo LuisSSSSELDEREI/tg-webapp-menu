@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Подарки Роблокс</title>
+    <title>Roblox Gifts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
@@ -13,12 +13,25 @@
             margin: 0;
             padding: 20px;
         }
+        .title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
         .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+            gap: 25px;
             max-width: 500px;
             margin: 0 auto;
+        }
+        .gift-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .gift-box {
             aspect-ratio: 1;
@@ -32,6 +45,7 @@
             position: relative;
             overflow: hidden;
             transition: transform 0.3s, background-color 0.3s;
+            width: 100%;
         }
         .gift-box:before {
             content: '🎁';
@@ -85,63 +99,97 @@
             color: #ffffff;
             margin-top: 5px;
         }
+        .day-label {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #888;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
+    <div class="title">Адвент Календарь 2024</div>
     <div class="grid">
-        <div class="gift-box" onclick="openGift(this, 1)">
-            <div class="gift-content">
-                <img src="photo_2024-12-16_20-27-43.jpg" class="roblox-character">
-                <div class="status-text">Получено</div>
+        <div class="gift-container">
+            <div class="gift-box" onclick="openGift(this, 1)">
+                <div class="gift-content">
+                    <img src="photo_2024-12-16_20-27-43.jpg" class="roblox-character">
+                    <div class="status-text">Получено</div>
+                </div>
             </div>
+            <div class="day-label">День 1</div>
         </div>
-        <div class="gift-box" onclick="openGift(this, 2)">
-            <div class="gift-content">
-                <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
-                <div class="robux">+1000</div>
+        <div class="gift-container">
+            <div class="gift-box" onclick="openGift(this, 2)">
+                <div class="gift-content">
+                    <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
+                    <div class="robux">+1000</div>
+                </div>
             </div>
+            <div class="day-label">День 2</div>
         </div>
-        <div class="gift-box" onclick="openGift(this, 3)">
-            <div class="gift-content">
-                <img src="pdrk3.jpg" class="roblox-character">
-                <div class="status-text">Получено</div>
+        <div class="gift-container">
+            <div class="gift-box" onclick="openGift(this, 3)">
+                <div class="gift-content">
+                    <img src="pdrk3.jpg" class="roblox-character">
+                    <div class="status-text">Получено</div>
+                </div>
             </div>
+            <div class="day-label">День 3</div>
         </div>
-        <div class="gift-box" onclick="openGift(this, 4)">
-            <div class="gift-content">
-                <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
-                <div class="robux">+2000</div>
+        <div class="gift-container">
+            <div class="gift-box" onclick="openGift(this, 4)">
+                <div class="gift-content">
+                    <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
+                    <div class="robux">+2000</div>
+                </div>
             </div>
+            <div class="day-label">День 4</div>
         </div>
-        <div class="gift-box" onclick="openGift(this, 5)">
-            <div class="gift-content">
-                <img src="4.jpg" class="roblox-character">
-                <div class="status-text">Получено</div>
+        <div class="gift-container">
+            <div class="gift-box" onclick="openGift(this, 5)">
+                <div class="gift-content">
+                    <img src="4.jpg" class="roblox-character">
+                    <div class="status-text">Получено</div>
+                </div>
             </div>
+            <div class="day-label">День 5</div>
         </div>
-        <div class="gift-box" onclick="openGift(this, 6)">
-            <div class="gift-content">
-                <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
-                <div class="robux">+3000</div>
+        <div class="gift-container">
+            <div class="gift-box" onclick="openGift(this, 6)">
+                <div class="gift-content">
+                    <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
+                    <div class="robux">+3000</div>
+                </div>
             </div>
+            <div class="day-label">День 6</div>
         </div>
-        <div class="gift-box" onclick="openGift(this, 7)">
-            <div class="gift-content">
-                <img src="5.jpg" class="roblox-character">
-                <div class="status-text">Получено</div>
+        <div class="gift-container">
+            <div class="gift-box" onclick="openGift(this, 7)">
+                <div class="gift-content">
+                    <img src="5.jpg" class="roblox-character">
+                    <div class="status-text">Получено</div>
+                </div>
             </div>
+            <div class="day-label">День 7</div>
         </div>
-        <div class="gift-box" onclick="openGift(this, 8)">
-            <div class="gift-content">
-                <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
-                <div class="robux">+4000</div>
+        <div class="gift-container">
+            <div class="gift-box" onclick="openGift(this, 8)">
+                <div class="gift-content">
+                    <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
+                    <div class="robux">+4000</div>
+                </div>
             </div>
+            <div class="day-label">День 8</div>
         </div>
-        <div class="gift-box" onclick="openGift(this, 9)">
-            <div class="gift-content">
-                <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
-                <div class="robux">+5000</div>
+        <div class="gift-container">
+            <div class="gift-box" onclick="openGift(this, 9)">
+                <div class="gift-content">
+                    <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
+                    <div class="robux">+5000</div>
+                </div>
             </div>
+            <div class="day-label">День 9</div>
         </div>
     </div>
 
