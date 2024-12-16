@@ -201,8 +201,6 @@
         function openGift(element, giftId) {
             if (!element.classList.contains('opened')) {
                 element.classList.add('opened');
-                
-                // Отправляем данные в Telegram
                 tg.sendData(JSON.stringify({
                     gift_id: giftId,
                     action: 'open'
