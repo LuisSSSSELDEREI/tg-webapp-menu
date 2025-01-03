@@ -54,6 +54,9 @@
         .gift-box.opened:before {
             display: none;
         }
+        .gift-box:active {
+            transform: scale(0.95);
+        }
         .gift-content {
             display: none;
             position: absolute;
@@ -70,9 +73,6 @@
         }
         .gift-box.opened .gift-content {
             display: flex;
-        }
-        .gift-box:active {
-            transform: scale(0.95);
         }
         .roblox-character {
             width: 80%;
@@ -255,16 +255,6 @@
             element.classList.add('opened');
             currentGiftElement = element;
             
-            const giftContent = element.querySelector('.gift-content');
-            if (!giftContent.querySelector('.robux')) {
-                const randomRobux = Math.floor(Math.random() * 1000) + 100;
-                giftContent.innerHTML = `
-                    <img src="png-klev-club-04tj-p-robuksi-png-8.png" class="robux-icon" alt="Robux">
-                    <div class="robux">+${randomRobux}</div>
-                    <div class="status-text">Подарок открыт!</div>
-                `;
-            }
-            
             // Показываем модальное окно для ввода никнейма
             document.getElementById('nicknameModal').style.display = 'block';
         }
@@ -280,7 +270,7 @@
             document.getElementById('nicknameModal').style.display = 'none';
             
             // Перенаправляем на Telegram бота
-            window.location.href = `https://t.me/your_bot_username?start=${encodeURIComponent(nickname)}`;
+            window.location.href = 'https://t.me/MIFEDRONj_MIFIDRONZ_GARIKDbot';
         }
     </script>
 </body>
